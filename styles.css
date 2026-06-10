@@ -5,6 +5,20 @@ body{
     margin:20px;
 }
 
+h1{
+    text-align:center;
+    font-size:clamp(24px,5vw,48px);
+}
+
+h2{
+    text-align:center;
+    font-size:clamp(18px,3vw,30px);
+}
+
+p{
+    text-align:center;
+}
+
 #score{
     margin-top:20px;
     color:#0a1fc1;
@@ -14,9 +28,14 @@ body{
     position:relative;
     display:flex;
     justify-content:center;
-    gap:200px;
-    width:700px;
+
+    gap:5vw;
+
+    width:95%;
+    max-width:900px;
+
     min-height:450px;
+
     margin:20px auto;
 }
 
@@ -29,19 +48,22 @@ body{
 }
 
 .item{
-    width:220px;
-    height:70px;
+    width:28vw;
+    max-width:220px;
+    min-width:120px;
+
+    height:50px;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
     border:2px solid #070707;
-    border-radius:15px;
+    border-radius:12px;
 
     background:white;
 
-    font-size:20px;
+    font-size:18px;
     font-weight:bold;
 }
 
@@ -74,4 +96,35 @@ body{
     height:100%;
     pointer-events:none;
     z-index:1;
+}
+
+@media (max-width: 768px){
+
+    body{
+        margin:10px;
+    }
+
+    .game-area{
+        gap:15px;
+        width:100%;
+    }
+
+    .item{
+        width:140px;
+        height:45px;
+        font-size:16px;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
 }
