@@ -27,12 +27,9 @@ p{
 .game-area{
     position:relative;
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
 
-    gap:280px;
-
-    width:95%;
-    max-width:1000px;
+    width:1000px;
 
     margin:20px auto;
 }
