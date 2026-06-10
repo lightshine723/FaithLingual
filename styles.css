@@ -29,12 +29,10 @@ p{
     display:flex;
     justify-content:center;
 
-    gap:5vw;
+    gap:280px;
 
     width:95%;
-    max-width:900px;
-
-    min-height:450px;
+    max-width:1000px;
 
     margin:20px auto;
 }
